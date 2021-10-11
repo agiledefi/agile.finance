@@ -1,0 +1,1564 @@
+/*Fonts*/
+@font-face {
+    font-family: 'GemunuLibre';
+    src: url('../fonts/GemunuLibre-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GemunuLibre';
+    src: url('../fonts/Comfortaa-Bold.woff2') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GemunuLibre';
+    src: url('../fonts/Comfortaa-Medium.woff2') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GemunuLibre';
+    src: url('../fonts/Comfortaa-Light.woff2') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* body */
+body{
+    font-family: 'GemunuLibre';
+    font-size: 18px;
+    background: #fff;
+}
+.container-width{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.text-red{
+    color: #990100;
+}
+.text-blue{
+    color: rgba(18, 74, 138, 1);;
+}
+.text-grey{
+    color: #767676;
+}
+.text-black{
+    color: #000;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+h2{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+h3{
+    font-size: 18px;
+    margin: 0;
+}
+h4{
+    font-size: 14px;
+    margin: 0;
+}
+h5{
+    font-size: 12px;
+    margin: 0;
+}
+h1 .title{
+    font-size: 40px;
+}
+.btn-primary {
+    min-width: 100px;
+    height: 50px;
+    background: rgba(17, 153, 250, 1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 34px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 35px;
+}
+.btn-primary:hover{
+    background: rgba(17, 153, 250, 1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 1);
+}
+/*header*/
+
+header{
+    /* position: absolute;
+    width: 100%;
+    z-index: 1;
+    margin-top: 40px; */
+}
+header .logo {
+    width: 250px;
+}
+header .navbar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*nav bar*/
+.nav-link {
+    color: #656565 !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #1199fa !important;
+
+}
+.nav-item {
+    margin: 0px 20px;
+}
+.navbar-expand-md .navbar-nav {
+    margin: 0 auto;
+}
+
+/*social section*/
+.social-banner {
+    background-image: url(../images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 450px;
+    position: relative;
+    padding-top: 0;
+}
+.social-banner .container-width {
+    z-index: 1;
+    position: relative;
+}
+.red-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% - 200px);
+    width: 100%;
+    /* z-index: -1; */
+}
+#particles-js {
+    height: 100%;
+    color: red !important;
+}
+.social-index{
+    position: relative;
+}
+.social-heading{
+    /* max-width: 1000px; */
+    padding-top: 40px;
+}
+.social-heading h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #fff;
+}
+.social-button {
+    margin-top: 40px;
+}
+.social-data {
+    padding-top: 40px;
+}
+.social-data h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.social-data h2{
+    /* font-family: 'Inter'; */
+    font-weight: 400;
+    color: #fff;
+}
+
+/*try avastorm section*/
+.try-section{
+    position: relative;
+    margin-top: -330px;
+    z-index: 9;
+}
+.try-head-img{
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    /* width: 16%; */
+    display: flex;
+    flex-direction: column;
+}
+.try-menu-img{
+    position: absolute;
+    top: 270px;
+    left: 0px;
+    width: 4%;
+}
+.try-line{
+    width: 106px;
+    border-top: 4px solid #690201 ;
+    opacity: 1;
+}
+.try-heading {
+    /* max-width: 660px; */
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+.try-heading h2{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+.try-nav {
+    justify-content: start;
+    gap: 35px;
+    margin-bottom: 0 !important;
+}
+.try-nav li{
+    margin: 0;
+}
+.button4{
+    color: #000000 !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-link {
+    padding: .5rem 0rem;
+}
+#pills-works-tab, #pills-branding-tab, #pills-design-tab, #pills-photography-tab{
+    border: none;
+    background: transparent;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #1199FA !important;
+    background-color: transparent !important;
+    font-weight: bold;
+}
+/*boxes*/
+.try-box{
+    background-color: #BEBEBE;
+    /* width: 380px; */
+    height: 320px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.try-box::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(../images/try-item-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 100%;
+}
+.try-box:hover::before{
+    background-image: url(../images/try-item-active-bg.png);
+
+}
+#pills-tabContent {
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+.box-data {
+    padding-top: 20px;
+}
+.box-data h2 {
+    margin-bottom: 20px;
+}
+.box-data p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.box-tag a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    visibility: hidden;;
+}
+.try-box:hover, .try-box:hover > .try-data{
+    color: #ffffff;
+    background: radial-gradient(68.28% 81.08% at 66.05% 30.94%, #006198 0%, #00001E 100%);
+    box-shadow: 0px 0px 20px 5px #00000066;
+}
+.try-box:hover > .box-tag a{
+    visibility: visible;
+    color: #FF0100;
+}
+
+/*secure sectrion*/
+.secure-section{
+    background-color: #00001E;
+    position: relative;
+    padding: 90px 0;
+    margin-bottom: 40px;
+}
+section.secure-section:before {
+    content: '';
+    background: radial-gradient(42.73% 42.73% at 49.6% 49.6%, #00A9F4 0%, #00001E 100%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+}
+/* section.secure-section:after {
+    content: '';
+    background: radial-gradient(42.73% 42.73% at 49.59% 49.6%, #00A9F4 0%, rgba(0, 25, 62, 0) 100%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 3;
+} */
+.secure-img {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    z-index: -1;
+    width: 15%;
+}
+.secure-heading {
+    padding: 0 0px;
+    color: #ffffff;
+    margin-bottom: 60px;
+    z-index: 9;
+    position: relative;
+}
+.secure-heading h3{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+.secure-heading h2{
+    padding-top: 20px;
+}
+.secure-data{
+    position: relative;
+    z-index: 9;
+}
+.secure-protocol { 
+    padding-top: 20px;
+    padding-top: 20px;
+    gap: 12px;
+}
+.secure-protocol p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+.secure-protocol i{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #FFC107;
+}
+.secure-box-1 {
+    height: 200px;
+    background: #00001E;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 0px;
+    box-shadow: 0px 0px 15px 10px #ffffff40;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.secure-box-1 h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 40px;
+}
+.secure-box-2{
+    height: 200px;
+    background: #00001e;
+    box-shadow: 0px 0px 15px 10px #ffffff40;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.secure-box-data{
+    color: #fff;
+}
+.secure-box-data h2.title{
+   font-size: 36px;
+   font-weight: bold;
+}
+.secure-box-data h5{
+    font-size: 12px;
+   font-weight: bold;
+   padding-top: 35px;
+}
+
+/*footer*/
+.footer-section {
+    color: #fff !important;
+    background-image: url(../images/footer-bg-blue.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    position: relative;
+    background-color: #000220;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-data {
+    position: relative;
+    z-index: 1;
+}
+#image3 {
+    width: 100%;
+    height: 100%;
+}
+.f-menu {
+    margin-top: 10px;
+}
+.f-menu ul{
+    list-style: none;
+    margin-top: 20px;
+    line-height: 34px;
+}
+.f-menu ul li a{
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+.f-menu ul li a:hover{
+    color: #1199fa !important;
+}
+.footer-head h3 {
+    font-weight: bold;
+}
+#button3{
+    width: 160px;
+    height: 60px;
+    background: linear-gradient(90deg, #690201 0%, #990100 100%);
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 34px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#button3:hover{
+    width: 160px;
+    height: 60px;
+    background: linear-gradient(90deg, #990100 0%, #690201 100%);
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 34px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#hr1 {
+    margin-top: 50px;
+    height: 3px;
+    background-color: #fff;
+    opacity: 1;
+}
+.copyright p{
+   
+    margin: 0;
+}
+.social-icons ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-icons ul li{
+    margin: 0px 11px;
+}
+.social-icons ul li a{
+    text-decoration: none;
+}
+.social-icons ul li a i{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff !important;
+}
+.social-icons ul li a i:hover{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+
+
+/******** Marketing page start *********/
+
+.market .social-banner{
+    background-image: url(../images/header_bg-m.png);
+    background-size: 100% 100%;
+    padding-bottom: 150px;
+    padding-top: 50px;
+    color: #fff;
+}
+.market .social-banner .container-width::before {
+    content: '';
+    background-image: url(../images/market-banner-overlay.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: -40px;
+    position: absolute;
+}
+/*marketing overview section*/
+.breadcrumb-item.active {
+    color: #000000 !important;
+    font-size: 36px;
+    font-weight: bold;
+}
+.red-banner{
+    width: 540px;
+    height: 45px;
+    background: #50A8FF;
+    border-radius: 4px;
+    max-width: 100%;
+}
+.red-banner p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+.vl-1{
+    border-left: 2px solid #50A8FF;
+    height: 20px;
+}
+.total-data {
+    margin-top: 60px;
+    max-width: 100%;
+}
+.market-head p{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+.hr-2{
+    width: 500px;
+    height: 2px;
+    background: #fff;
+    margin: 8px 0px;
+    max-width: 100%;
+}
+.p-flex {
+    max-width: 500px;
+}
+.p-bg {
+    width: 76px;
+    height: 30px;
+    background: #002D74;
+    border-radius: 15px;
+    font-size: 18px !important;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-markets h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.market-flex p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.progress {
+    background-color: #D3D6E4;
+    height: 6px;
+}
+.progress-bar {
+    background-color: #FF931E;
+}
+.market-flex {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.average-section {
+    margin-top: 80px;
+}
+.total-score {
+    width: 100%;
+}
+.total-score h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+.total-score p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.total-average{
+    width: 100%;
+}
+.total-average h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+.total-average p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.hr-3{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 8px 0px;
+    max-width: 100%;
+}
+.average-boost h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.average-boost i{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.average-boost p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+}
+/*All markets section*/
+.all-markets {
+    padding-bottom: 100px;
+    position: relative;
+}
+.all-markets::before {
+    content: '';
+    background-image: url(../images/table-section-overlay.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: -130px;
+    position: absolute;
+}
+
+.all-markets-head {
+    padding-bottom: 40px;
+}
+.all-markets-head h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+table{
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Avenir Next LT Pro';
+}
+.td-element {
+    margin-top: 0;
+}
+.td-element p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+thead{
+    background-color: #172344;
+    color: #ffffff !important;
+}
+thead tr {
+    height: 60px;
+    padding: 0 10px;
+}
+tbody tr{
+    padding: 5px 0;
+}
+.td-element-1 {
+    background-color: #ffffff !important;
+    /* margin-top: 15px; */
+    margin-bottom: 0;
+}
+.table>:not(caption)>*>* {
+    padding: .5rem .5rem;
+    background-color: transparent;
+    border-bottom-width: 0px;
+    box-shadow: none
+}
+.td-element-1 a{
+    text-decoration: none;
+}
+.td-element-1 p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.td-element-1 h2{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    color: #0B131B;
+}
+.td-element-1 h3{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.td-element-1 p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 10px;
+    color: #000;
+    margin-bottom: 0;
+}
+.td-element-1 a p {
+    color: #000000;
+}
+tr{
+    border-bottom: 1px solid #000;
+}
+
+
+/******** BTC page starts********/
+.breadcrumb-item a {
+    color: #000000 !important;
+    /* font-size: 36px; */
+    font-weight: bold;
+    text-decoration: none;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: black;
+}
+.btc-head {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.btc-heading {
+    margin-top: 25px;
+}
+.hr-4{
+    margin: 20px 0px;
+    border-bottom: 4px solid #CE2322;
+}
+.supply-borrow {
+    margin-top: 40px;
+}
+.red-box{
+    width: 22px;
+    height: 22px;
+    background-color: #B61B1B;
+}
+.yellow-box{
+    width: 22px;
+    height: 22px;
+    background-color: #FF9800;
+}
+.supply-tag h3{
+    margin-left: 12px;
+    color: #990100;
+    font-weight: bold;
+}
+.borrow-tag h3{
+    margin-left: 12px;
+    color: #690201;
+    font-weight: bold;
+}
+.line-graph {
+    margin-top: 40px;
+}
+.bar-graph {
+    margin-top: 70px;
+}
+.t-supply{
+    font-size: 16px;
+    font-weight: bold;
+    color: black
+}
+.t-borrow{
+    font-size: 16px;
+    font-weight: bold;
+    color: black
+}
+.hr-5{
+    width: 150px;
+    height: 2px;
+    background: #FF0100;
+    margin: 8px 0px;
+    max-width: 100%;
+}
+.rm-up-head{
+    font-size: 16px;
+    font-weight: 400;
+    color: black
+}
+.rm-down-head{
+    font-size: 24px;
+    font-weight: 400;
+    color: black
+}
+.borrow-data {
+    margin-top: 60px;
+}
+/*markets details section*/
+
+.market-details{
+    padding-bottom: 100px;
+}
+.rewards-head{
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.rewards-box {
+    background: #C91313;
+    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 40%);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.average-head {
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+.green-box{
+    width: 22px;
+    height: 22px;
+    background-color: #559867;
+}
+.day-data {
+    padding: 30px;
+}
+/*average table*/
+.average-table{
+    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 40%);
+    margin-top: 30px;
+}
+.table-data {
+    padding: 29px 40px;
+    border-bottom: 1px solid black;
+    height: 100%;
+    align-items: center;
+}
+.red-table-text{
+    font-size: 24px;
+}
+.red-color{
+    color: #FF0100;
+}
+.table-data-1 {
+    padding: 29px 40px;
+}
+.table-data-2 {
+    padding: 29px 40px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.supply-head , .borrow-head {
+    margin-bottom: 30px;
+}
+
+
+/* responsive media queries */
+
+@media screen and (max-width: 1400px){
+   
+    /*social section*/
+    /* .social-heading h1 {
+        font-size: 33px;
+    }
+    .social-banner {
+        padding-bottom: 120px;
+    } */
+    /*try section*/
+}
+
+@media screen and (max-width: 1280px){
+    /*container width*/
+    body{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h1 .title {
+        font-size: 32px;
+    }
+    h2{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    #hr1 {
+        margin-top: 30px;
+    }
+    .container-width {
+        max-width: 960px;
+    }
+    /*nav bar*/
+    .nav-item {
+        margin: 0px 18px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .social-banner {
+        padding-bottom: 350px;
+    }
+    .social-heading{
+        padding: 0;
+    }
+    /*social section*/
+    .social-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .social-data {
+        padding-top: 30px;
+    }
+    .social-data h1 {
+        font-size: 22px;
+    }
+    .social-button {
+        margin-top: 30px;
+    }
+    .btn-primary {
+        height: 45px;
+        font-size: 16px;
+        padding: 0 25px;
+    }
+    /*try section*/
+    .try-heading h2 {
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .try-box {
+        /* width: 300px; */
+        height: 300px;
+    }
+    .try-menu-img{
+        width: 3%;
+    }
+    .box-data {
+        padding-top: 20px;
+    }
+    .box-data p {
+        font-size: 16px;
+    }
+    .box-tag a{
+        font-size: 16px;
+    }
+    .try-head-img {
+        top: -20px;
+        /* top: 11px;
+        width: 26%; */
+    }
+    .try-menu {
+        position: relative;
+    }
+    .button4{
+        font-size: 22px;
+    }
+    #pills-tabContent {
+        padding-top: 40px;
+        padding-bottom: 90px;
+    }
+    .secure-section {
+        padding: 70px 0;
+    }
+    .secure-heading {
+        margin-bottom: 40px;
+    }
+    .footer-section {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+   
+    .red-banner p {
+        font-size: 15px;
+    }
+    .p-bg{
+        font-size: 15px !important;
+    }
+    .hr-2 {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 991px){
+    /*container width*/
+    body{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    h1 .title {
+        font-size: 26px;
+    }
+    h2{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    #hr1 {
+        margin-top: 25px;
+    }
+    .btn-primary {
+        font-size: 15px;
+        min-width: 80px;
+    }
+    .container-width {
+        max-width: 720px;
+    }
+    header {
+        /* margin-top: 20px; */
+    }
+    header .logo {
+        width: 150px;
+    }
+    /*nav bar*/
+    .nav-link {
+        font-size: 14px;
+    }
+    .nav-item {
+        margin: 0px 6px;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .social-data {
+        padding-top: 30px;
+    }
+    /*social section*/
+    .social-banner {
+        padding-bottom: 250px;
+    }
+    .social-heading h1 {
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .social-data h2 {
+        font-size: 16px;
+    }
+    .social-button {
+        margin-top: 20px;
+    }
+    /*try section*/
+    .try-section {
+        margin-top: -200px;
+    }
+    .try-line {
+        width: 85px;
+    }
+    .try-heading {
+        /* max-width: 480px; */
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    .try-heading h2 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .try-box {
+        /* width: 230px; */
+        height: 280px;
+    }
+    .box-data p {
+        font-size: 14px;
+    }
+    #pills-tabContent {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    /*secure setion*/
+    .secure-heading h1 {
+        font-size: 20px;
+    }
+    .secure-box-1 {
+        /* width: 228px; */
+        height: 139px;
+        padding: 18px 0px;
+    }
+    .secure-box-1 h1 {
+        font-size: 12px;
+        padding-top: 25px;
+    }
+    .secure-box-2 {
+        /* width: 476px; */
+        height: 139px;
+    }
+    .secure-box-2 img {
+        width: 50%;
+    }
+    .secure-box-data h1 {
+        font-size: 20px;
+    }
+    .secure-box-data p {
+        font-size: 10px;
+    }
+    .secure-box-data h2.title {
+        font-size: 28px;
+    }
+    .box-tag a {
+        font-size: 13px;
+    }
+    /*footer section*/
+    .footer-head h3 {
+        /* font-size: 15px; */
+    }
+    .footer-logo {
+        margin-top: 5px;
+    }    
+    .secure-box-data h2.title {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .button4 {
+        font-size: 18px;
+    }
+
+
+    .red-banner {
+        width: 420px;
+    }
+    .hr-2 {
+        width: 300px;
+    }
+    .top-markets h3 , .market-flex p , .total-score h3 ,.total-average h3, .total-average p , .total-score p, .td-element p{
+        font-size: 15px;
+    }
+    .all-markets-head h1 {
+        font-size: 24px;
+    }
+    .td-element-1 p,.td-element-1 h2{
+        font-size: 14px;
+    }
+    .all-markets {
+        padding-bottom: 50px;
+    }
+
+    .btc-logo {
+        width: 40px;
+    }
+    .btc-head {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .rm-up-head{
+        font-size: 11px;
+    }
+    .rm-down-head ,.red-table-text{
+        font-size: 20px;
+    }
+    .table-data , .table-data-2 , .table-data-1{
+        padding: 20px 25px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    h1 .title{
+        font-size: 24px;
+    }
+    /*container width*/
+    .container-width {
+        max-width: 540px;
+    }
+    /*header*/
+    header {
+        /* margin-top: 10px; */
+    }
+    /*nav bar*/
+    .navbar-dark .navbar-toggler {
+        padding: 0;
+        position: relative;
+        top: 0px;
+        right: 7px;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-dark .navbar-toggler{
+        border:none;
+        padding:0;
+        font-size:24px;
+        color: #a70405;
+        position: absolute;
+        right:24px;
+        top:0%;
+    }
+    .navbar-collapse{
+        position: absolute;
+        left:0;
+        top:100%;
+        right: 0;
+        z-index: 99;
+        background: linear-gradient(180deg, #0d70b7 0%, #000827 100%);
+        border-radius: 4px;
+        text-align: center;
+        padding: 20px 0px;
+        margin: 10px 20px 0;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        margin:0;
+        padding:7px 10px;
+        display:block;
+        color: #ffffff !important;
+        width:90%;
+        font-size: 24px;
+    }
+    .collapsed > #image9{
+        display: none;
+    }
+    .navbar-toggler:not(.collapsed) > #image8{
+        display: none;
+    }
+    .red-bg {
+        height: calc(100% - 100px);
+    }
+    /*social section*/
+    .social-index {
+        z-index: 0;
+        text-align: center;
+    }
+    .social-banner {
+        background-position: top center;
+        padding-top: 30px;
+        padding-bottom: 250px;
+    }
+    .market .social-banner {
+        padding-bottom: 110px;
+        padding-top: 40px;
+        background-size: cover;
+    }
+    .social-heading h1 {
+        line-height: 35px;
+        text-align: left;
+    }
+    .social-data {
+        padding-top: 20px;
+    }
+    .social-button {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .social-heading {
+        padding-top: 0;
+    }
+    .social-banner .order-first {
+        display: none !important;
+    }
+    /*try section*/
+    .all-markets::before{
+        display: none;
+    }
+    .try-section{
+        margin-top: -180px;
+    }
+    .try-nav{
+        justify-content: center;
+        gap: 25px;
+    }
+    .try-line {
+        width: 106px;
+        margin: 0 auto 20px;
+    }
+    .try-heading {
+        text-align: center;
+    }
+    .try-heading h2 {
+        color: #990100;      
+    }
+    .try-heading h2 + h2 {
+        color: #767676;     
+    }
+    .try-head-img {
+        top: 11px;
+        width: 40%;
+    }
+    .secure-img{
+        width: 40%;
+    }
+    .nav-link {
+        font-size: 14px;
+    }
+    .button4 {
+        font-size: 18px;
+    }
+    #pills-tabContent {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .try-box {
+        /* width: 300px; */
+        height: 252px;
+        margin: 20px auto 0;
+        max-width: 300px;
+        padding: 15px 10px;
+        align-items: center;
+        text-align: center;
+        /* background: transparent; */
+        /* border: 1px solid #990100; */
+    }
+    .try-box::before{
+        background-size: 80%;
+    }
+    .box-data h2{
+        font-size: 20px;
+    }
+    .try-box .box-tag{
+        width: 100%;
+    }
+    .try-menu-img {
+        /* width: 40px; */
+        /* width: 9%;
+        top: 368px; */
+    }
+    /*secure section*/
+    .secure-heading {
+        text-align: center;
+        /* width: 210px; */
+        margin: 0 auto 50px;
+    }
+    .secure-heading h2 {
+        padding-top: 20px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .secure-protocol {
+        justify-content: center;
+    }
+    .secure-box-1 {
+        /* width: 300px; */
+        height: 150px;
+        margin: 0 auto 30px;
+    }
+    .secure-box-2 {
+        /* width: 300px; */
+        height: 142px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .secure-box-2 img {
+        position: absolute;
+        opacity: 0.3;
+        width: auto;
+    }
+    .secure-box-data {
+        position: relative;
+    }
+    /*footer section*/
+    .footer-head h3 {
+        font-size: 18px;
+    }
+    .f-menu {
+        margin-top: 30px;
+    }
+    #button3 {
+       display: none;
+    }
+    .hr-tag {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+    .copyright-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        margin: 10px auto 0;
+    }
+    .secure-section {
+        /* padding: 40px 0; */
+    }
+    .footer-section {
+        padding-top: 40px;
+    }
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    .f-menu ul {
+        margin-top: 0;
+        line-height: 25px;
+    }
+    .footer-button{
+        display: none;
+    }
+    .market-table table{
+        width: 750px !important;
+    }
+    .social-nav {
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .social-nav h1{
+        margin-bottom: 20px;
+    }
+    .sb-data {
+        margin-top: 60px;
+    }
+    .average-table-section {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 575px){
+
+    .total-data {
+        margin: 50px auto 20px;
+    }
+    .average-section {
+        margin-top: 50px;
+    }
+    .all-markets {
+        margin-top: -50px;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    h1 .title {
+        font-size: 20px;
+    }
+    /*container width*/
+     .container-width{
+         max-width: 100%;
+     }
+    /*nav bar*/
+    .logo {
+        width: 55%;
+    }
+    .navbar-dark .navbar-toggler {
+        top: 0%;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+    /*social section*/
+    .social-heading h1 {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .social-data h1 {
+        font-size: 12px;
+    }
+    /*try heading*/
+    .try-heading h1 {
+        font-size: 17px;
+    }
+    
+    .nav-link {
+        font-size: 10px;
+    }
+    #pills-tabContent {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+    .box-img {
+        width: 20%;
+    }
+    .secure-box-data h1 {
+        font-size: 36px;
+        margin-top: 18px;
+    }
+    /*footer*/
+    .footer-section {
+        padding-bottom: 10px;
+    }
+    .copyright p {
+        font-size: 15px;
+    }
+    .try-menu-img {
+        width: 7%;
+    }
+
+    .top-markets h3 , .market-flex p , .total-score h3 ,.total-average h3, .total-average p , .total-score p, .td-element p{
+        font-size: 12px;
+    }
+    .all-markets-head h1 {
+        font-size: 20px;
+    }
+    .td-element-1 p,.td-element-1 h2{
+        font-size: 12px;
+    }
+    .red-banner p {
+        font-size: 10px;
+    }
+    .table-data, .table-data-2, .table-data-1 {
+        padding: 15px 15px;
+    }
+    .rm-up-head{
+        font-size: 9px;
+    }
+    .rm-down-head ,.red-table-text{
+        font-size: 16px;
+    }
+}
+
