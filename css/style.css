@@ -16,7 +16,7 @@
          url('../fonts/GemunuLibreRegular.woff2') format('woff2'),
          url('../fonts/GemunuLibreRegular.woff') format('woff'),
          url('../fonts/GemunuLibreRegular.ttf') format('truetype'),
-         url('../fonts/GemunuLibreRegular.svg#GemunuLibreRegular') format('svg'); 
+         url('../fonts/GemunuLibreRegular.svg#GemunuLibreRegular') format('svg');
 }
 
 @font-face {
@@ -196,6 +196,7 @@ h2.brdr-top::before {
 }
 .tokenomics-sec p {
     margin: 0;
+    font-size: 23px;
 }
 .timeline-chart {
     padding-top: 40px;
@@ -330,6 +331,7 @@ h2.brdr-top::before {
     text-align: center;
     margin: 0;
     font-size: 32px;
+    line-height: 36px;
 }
 .roadmap-1 {
     padding-top: 46px;
@@ -338,22 +340,22 @@ h2.brdr-top::before {
     padding-top: 150px;
 }
 .roadmap-3 {
-    margin-top: -38px;
+    margin-top: -12px;
 }
 .roadmap-4 {
-    padding-top: 82px;
+    padding-top: 108px;
 }
 .roadmap-5 {
-    margin-top: 70px;
+    margin-top: 98px;
 }
 .roadmap-6 {
-    margin-top: -95px;
+    margin-top: -5px;
 }
 .roadmap-7 {
-    padding-top: 124px;
+    padding-top: 214px;
 }
 .doc-wraper {
-    padding: 15px 25px;
+    padding: 15px 18px;
     border-radius: 10px;
     position: relative;
 }
@@ -409,16 +411,25 @@ h2.brdr-top::before {
     top: -58px;
 }
 .roadmap-column .roadmap-dese-left:hover .doc-wraper,
-.roadmap-column .roadmap-dese-right:hover .doc-wraper {
+.roadmap-column .roadmap-1:hover .doc-wraper,
+.roadmap-column .roadmap-inner-3:hover,
+.roadmap-column .roadmap-5:hover,
+.roadmap-column .roadmap-6:hover .doc-wraper {
     background: radial-gradient(68.28% 81.08% at 66.05% 30.94%, #006198 0%, #00001E 100%);
     box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 40%);
 }
 .roadmap-column .roadmap-dese-left:hover .doc-wraper::before,
-.roadmap-column .roadmap-dese-right:hover .doc-wraper::before {
+.roadmap-column .roadmap-1:hover .doc-wraper::before,
+.roadmap-column .roadmap-inner-3:hover::before,
+.roadmap-column .roadmap-5:hover::before,
+.roadmap-column .roadmap-6:hover .doc-wraper::before {
     background-color: #C91313;
 }
 .roadmap-column .roadmap-dese-left:hover .doc-wraper h1,
-.roadmap-column .roadmap-dese-right:hover .doc-wraper h1 {
+.roadmap-column .roadmap-1:hover .doc-wraper h1,
+.roadmap-column .roadmap-inner-3:hover h1,
+.roadmap-column .roadmap-5:hover h1,
+.roadmap-column .roadmap-6:hover .doc-wraper h1 {
     color: #ffffff;
 }
 .roadmap-top-dots {
@@ -458,6 +469,9 @@ h2.brdr-top::before {
     padding-right: 47px;
     font-size: 24px;
 }
+.secure-section {
+    margin-bottom: 90px;
+}
 /*=======================Agile-Common-Sec=======================*/
 
 
@@ -480,5 +494,8 @@ h2.brdr-top::before {
     height: auto;
     font-size: 24px;
     padding: 10px 55px;
+}
+.f-menu {
+    margin-top: 0;
 }
 /*=======================Agile-Footer=======================*/
