@@ -16,7 +16,7 @@
          url('../fonts/GemunuLibreRegular.woff2') format('woff2'),
          url('../fonts/GemunuLibreRegular.woff') format('woff'),
          url('../fonts/GemunuLibreRegular.ttf') format('truetype'),
-         url('../fonts/GemunuLibreRegular.svg#GemunuLibreRegular') format('svg');
+         url('../fonts/GemunuLibreRegular.svg#GemunuLibreRegular') format('svg'); 
 }
 
 @font-face {
