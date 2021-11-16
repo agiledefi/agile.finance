@@ -1,0 +1,484 @@
+/*=======================Agile-Fonts=======================*/
+@font-face {
+    font-family: 'GemunuLibreBold';
+    src: url('../fonts/GemunuLibreBold.eot');
+    src: url('../fonts/GemunuLibreBold.eot') format('embedded-opentype'),
+         url('../fonts/GemunuLibreBold.woff2') format('woff2'),
+         url('../fonts/GemunuLibreBold.woff') format('woff'),
+         url('../fonts/GemunuLibreBold.ttf') format('truetype'),
+         url('../fonts/GemunuLibreBold.svg#GemunuLibreBold') format('svg');
+}
+
+@font-face {
+    font-family: 'GemunuLibreRegular';
+    src: url('../fonts/GemunuLibreRegular.eot');
+    src: url('../fonts/GemunuLibreRegular.eot') format('embedded-opentype'),
+         url('../fonts/GemunuLibreRegular.woff2') format('woff2'),
+         url('../fonts/GemunuLibreRegular.woff') format('woff'),
+         url('../fonts/GemunuLibreRegular.ttf') format('truetype'),
+         url('../fonts/GemunuLibreRegular.svg#GemunuLibreRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'GemunuLibreExtraBold';
+    src: url('../fonts/GemunuLibreExtraBold.eot');
+    src: url('../fonts/GemunuLibreExtraBold.eot') format('embedded-opentype'),
+         url('../fonts/GemunuLibreExtraBold.woff2') format('woff2'),
+         url('../fonts/GemunuLibreExtraBold.woff') format('woff'),
+         url('../fonts/GemunuLibreExtraBold.ttf') format('truetype'),
+         url('../fonts/GemunuLibreExtraBold.svg#GemunuLibreExtraBold') format('svg');
+}
+
+h1, h2, h4, h5, h6, .btn-primary {
+    font-family: 'GemunuLibreBold';
+}
+
+p {
+    font-family: 'GemunuLibreRegular';
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 55px;
+    color: #000000;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 36px;
+    font-family: 'GemunuLibreRegular';
+    color: #00001e;
+}
+
+h5 {
+    font-size: 24px;
+    color: #000000;
+    font-family: 'GemunuLibreExtraBold';
+    margin-bottom: 15px;
+}
+/*=======================Agile-Fonts=======================*/
+
+
+
+
+/*=======================Agile-Header=======================*/
+.nav-link {
+    font-size: 24px;
+    font-family: 'GemunuLibreBold';
+}
+.nav-button button.btn {
+    color: #ffffff;
+    font-size: 24px;
+}
+/*=======================Agile-Header=======================*/
+
+
+
+/*=======================Agile-Timeline-Page=======================*/
+
+/*===========Agile-Banner===========*/
+.timeline-banner {
+    background-image: url(../images/timeline-bnr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+    position: relative;
+    padding-top: 80px;
+}
+.timeline-heading h1 {
+    color: #ffffff;
+}
+.timeline-heading h1 .text-red {
+    font-size: 48px;
+    line-height: 60px;
+}
+.timeline-data h3 {
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+.timeline-button button.btn {
+    height: auto;
+    font-size: 24px;
+    padding: 10px 43px;
+    line-height: normal;
+}
+/*===========Agile-Banner===========*/
+
+/*===========Agile-Try===========*/
+.timeline-try-section {
+    padding: 121px 0 107px;
+    position: relative;
+    z-index: 9;
+}
+.timeline-try-head-img {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    align-items: flex-end;
+}
+.timeline-try-head-img .dots,
+.secure-img img {
+    width: 318px;
+}
+.timeline-try-heading {
+    margin-bottom: 50px;
+}
+.try-menu .try-nav {
+    gap: 76px;
+}
+.try-menu li.nav-item button {
+    font-size: 28px;
+}
+.try-box {
+    z-index: 9;
+}
+.try-box::before {
+    z-index: -1;
+}
+.box-data h2 {
+    font-size: 28px;
+    margin: 0;
+}
+.box-tag a {
+    text-transform: uppercase;
+    font-family: 'GemunuLibreBold';
+}
+.try-box:hover > .box-tag a {
+    color: #990100;
+}
+.try-menu #pills-tabContent {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+.secure-img {
+    bottom: 0;
+    left: 1px;
+    width: auto;
+}
+.try-box:hover h2,
+.try-box:hover p {
+    color: #ffffff;
+}
+/*===========Agile-Try===========*/
+
+/*===========Agile-Chart===========*/
+.tokenomics-sec {
+    padding: 50px 0;
+}
+h2.brdr-top {
+    position: relative;
+    margin-bottom: 30px;
+}
+h2.brdr-top::before {
+    content: "";
+    width: 200px;
+    height: 4px;
+    position: absolute;
+    top: -50px;
+    background-color: #00001E;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tokenomics-sec h3 {
+    margin-bottom: 30px;
+}
+.tokenomics-sec p {
+    margin: 0;
+}
+.timeline-chart {
+    padding-top: 40px;
+}
+/*===========Agile-Chart===========*/
+
+/*===========Agile-Contract===========*/
+.contract-sec {
+    padding: 40px 0;
+    background-image: url(../images/contract-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 9;
+}
+.gradient-row {
+    margin-top: 75px;
+}
+.gradient-box {
+    position: relative;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 34px;
+    padding-bottom: 35px;
+    z-index: 9;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+    flex-flow: column wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.gradient-box::before {
+    border-radius: 34px;
+    border: 3px solid transparent;
+    background: linear-gradient(90deg,#2D82E8,#c2c3c6,#c2c3c6,#c2c3c6,#002D74) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.gradient-icon {
+    width: 100px;
+    height: 100px;
+    background: #C4C4C4;
+    border-radius: 100px;
+    margin: -52px auto 25px;
+    position: relative;
+    z-index: 9;
+}
+.gradient-icon {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    vertical-align: middle;
+    -ms-flex-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.gradient-icon::before {
+    border-radius: 100px;
+    border: 3px solid transparent;
+    background: linear-gradient(90deg,#2D82E8,#c2c3c6,#c2c3c6,#c2c3c6,#002D74) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.gradient-txt h2 {
+    font-size: 48px;
+    font-family: 'GemunuLibreExtraBold';
+}
+.contract-sec .secure-img {
+    bottom: -41px;
+}
+/*===========Agile-Contract===========*/
+
+/*===========Agile-Roadmap===========*/
+.roadmap-sec {
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+.roadmap-area {
+    padding-top: 70px;
+    position: relative;
+}
+.roadmap-tree {
+    min-height: 1300px;
+    position: relative;
+    z-index: 9;
+}
+.roadmap-tree::before {
+    content: "";
+    width: 505px;
+    height: 100%;
+    background-image: url(../images/roadmap-lines.png);
+    background-size: cover;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: -1;
+}
+.roadmap-dese-left {
+    padding-right: 75px;
+}
+.roadmap-dese-right {
+    padding-left: 75px;
+}
+.doc-wraper h1 {
+    color: #00001E;
+    font-family: 'GemunuLibreRegular';
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    font-size: 32px;
+}
+.roadmap-1 {
+    padding-top: 46px;
+}
+.roadmap-2 {
+    padding-top: 150px;
+}
+.roadmap-3 {
+    margin-top: -38px;
+}
+.roadmap-4 {
+    padding-top: 82px;
+}
+.roadmap-5 {
+    margin-top: 70px;
+}
+.roadmap-6 {
+    margin-top: -95px;
+}
+.roadmap-7 {
+    padding-top: 124px;
+}
+.doc-wraper {
+    padding: 15px 25px;
+    border-radius: 10px;
+    position: relative;
+}
+.doc-wraper::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    border-radius: 100px;
+    border: 4px solid #002D74;
+    box-shadow: inset 0px 5px 10px #000000;
+    background: #00AEEF;
+    color: #ffffff;
+    font-family: 'GemunuLibreExtraBold';
+    text-align: center;
+    font-size: 36px;
+    line-height: 39px;
+}
+.roadmap-1 .doc-wraper::before {
+    content: "1";
+    top: -60px;
+    left: 92px;
+}
+.roadmap-2 .doc-wraper::before {
+    content: "2";
+    right: 98px;
+    top: -64px;
+}
+.roadmap-3 .roadmap-inner-3::before {
+    content: "3";
+    left: 102px;
+    top: -69px;
+}
+.roadmap-4 .doc-wraper::before {
+    content: "4";
+    top: -68px;
+    right: 109px;
+}
+.roadmap-3 .roadmap-5::before {
+    content: "5";
+    top: -63px;
+    left: 112px;
+}
+.roadmap-6 .doc-wraper::before {
+    content: "6";
+    top: -61px;
+    left: 121px;
+}
+.roadmap-7 .doc-wraper::before {
+    content: "7";
+    right: 120px;
+    top: -58px;
+}
+.roadmap-column .roadmap-dese-left:hover .doc-wraper,
+.roadmap-column .roadmap-dese-right:hover .doc-wraper {
+    background: radial-gradient(68.28% 81.08% at 66.05% 30.94%, #006198 0%, #00001E 100%);
+    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 40%);
+}
+.roadmap-column .roadmap-dese-left:hover .doc-wraper::before,
+.roadmap-column .roadmap-dese-right:hover .doc-wraper::before {
+    background-color: #C91313;
+}
+.roadmap-column .roadmap-dese-left:hover .doc-wraper h1,
+.roadmap-column .roadmap-dese-right:hover .doc-wraper h1 {
+    color: #ffffff;
+}
+.roadmap-top-dots {
+    position: absolute;
+    top: 50px;
+    right: -67px;
+}
+.roadmap-bottom-dots {
+    position: absolute;
+    bottom: 202px;
+    left: -68px;
+}
+/*===========Agile-Roadmap===========*/
+
+/*=======================Agile-Timeline-Page=======================*/
+
+
+
+
+/*=======================Agile-Common-Sec=======================*/
+.secure-heading h3,
+.secure-heading h2,
+.secure-protocol p,
+.secure-box-data h2.title,
+.secure-box-data h5,
+.copyright p,
+.footer-head h3 {
+    color: #ffffff;
+}
+.secure-heading h3 {
+    font-size: 24px;
+}
+.secure-protocol p {
+    background-image: url(../images/yellow-rgt.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 47px;
+    font-size: 24px;
+}
+/*=======================Agile-Common-Sec=======================*/
+
+
+
+
+/*=======================Agile-Footer=======================*/
+.footer-head h3 {
+    font-weight: normal;
+    font-family: 'GemunuLibreBold';
+    font-size: 24px;
+}
+.f-menu ul li a {
+    font-family: 'GemunuLibreBold';
+    font-size: 18px;
+    font-weight: normal;
+}
+.footer-button button.btn {
+    color: #ffffff;
+    line-height: normal;
+    height: auto;
+    font-size: 24px;
+    padding: 10px 55px;
+}
+/*=======================Agile-Footer=======================*/
