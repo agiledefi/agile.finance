@@ -43,12 +43,74 @@
     <link href="css/aos.css" rel="stylesheet">
     <!-- style -->
     <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript">
+        (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "11/22/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+    </script>
 </head>
 
 <body>
    
     <!--Header-->
     <header>
+        <div class="container">
+               <div class="text-center tp_txt">
+                 <p>  Whitelist is now open from 11/15 to 11/21 <br>
+                    You must Whitelist before you can participate in Presale - First Come - First Served
+                </p> 
+                </div>
+            <div id="countdown">
+        
+              <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+              </ul>
+            </div>
+          </div>
+
         <!--nav bar-->
         <nav class="navbar navbar-expand-md navbar-dark nav-banner">
             <div class="container-fluid container-width position-relative">
@@ -830,7 +892,6 @@
                             <li><a href="https://t.me/agiledefi"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
                             <li><a href="https://twitter.com/agiledefi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             <li><a href="https://github.com/agiledefi"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                            <li><a href="https://discord.gg/UDKRXMwP7s"><i class="fa fa-discord" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
