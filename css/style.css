@@ -447,6 +447,9 @@ h2.brdr-top::before {
 .contract-sec .secure-img {
     bottom: -41px;
 }
+.contract-row1 .col-md-4:not(:last-of-type) {
+    margin-bottom: 75px;
+}
 /*===========Agile-Contract===========*/
 
 /*===========Agile-Roadmap===========*/
@@ -554,7 +557,8 @@ h2.brdr-top::before {
     top: -68px;
     right: 109px;
 }
-.roadmap-3 .roadmap-5::before {
+.roadmap-3 .roadmap-5::before,
+.roadmap-4 .roadmap-5::before {
     content: "5";
     top: -63px;
     left: 112px;
@@ -600,6 +604,9 @@ h2.brdr-top::before {
     position: absolute;
     bottom: 202px;
     left: -68px;
+}
+.roadmap-dese-left .roadmap-5 {
+    display: none;
 }
 /*===========Agile-Roadmap===========*/
 
@@ -658,3 +665,135 @@ h2.brdr-top::before {
     margin-top: 0;
 }
 /*=======================Agile-Footer=======================*/
+
+
+
+
+
+
+
+
+/*=======================Agile-Mobile-Media=======================*/
+@media (min-width: 0px) and (max-width: 849px) {
+.roadmap-top-dots {
+    right: 0;
+}
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+.contract-row1 .col-md-4:not(:last-of-type) {
+    margin-bottom: 75px;
+}
+.roadmap-tree::before {
+    display: none;
+}
+.roadmap-dese-left, .roadmap-dese-right {
+    padding: 80px 0 0;
+}
+.roadmap-column .roadmap-2,
+.roadmap-column .roadmap-4,
+.roadmap-column .roadmap-7 {
+    order: 2;
+}
+.roadmap-column .doc-wraper::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.doc-wraper h1 {
+    font-size: 23px;
+    line-height: 28px;
+}
+.roadmap-dese-right .roadmap-5 {
+    display: none;
+}
+.roadmap-dese-left .roadmap-5 {
+    display: block;
+}
+}
+
+
+
+@media (min-width: 320px) and (max-width: 549px) {
+
+}
+
+
+
+@media (min-width: 550px) and (max-width: 767px) {
+
+}
+
+
+
+
+@media (min-width: 550px) and (max-width: 849px) {
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 849px) {
+.doc-wraper h1 {
+    font-size: 18px;
+    line-height: 27px;
+}
+.roadmap-7 {
+    padding-top: 249px;
+}
+.roadmap-6 {
+    padding-top: 37px;
+}
+.contract-row1 .col-md-4 {
+    width: 50%;
+}
+.contract-row1 .col-md-4:nth-of-type(3n) {
+    margin-bottom: 0;
+}
+.gradient-txt h2 {
+    font-size: 42px;
+}
+}
+
+
+
+
+@media (min-width: 850px) and (max-width: 1024px) {
+.timeline-banner .col-lg-8 {
+    width: 60%;
+}
+.timeline-banner .col-lg-4 {
+    width: 40%;
+}
+.doc-wraper h1 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.roadmap-3 {
+    margin-top: 6px;
+}
+.roadmap-4 {
+    padding-top: 126px;
+}
+.roadmap-5 {
+    margin-top: 86px;
+}
+.roadmap-6 {
+    margin-top: 57px;
+}
+.roadmap-7 {
+    padding-top: 274px;
+}
+.gradient-txt h2 {
+    font-size: 38px;
+}
+}
+/*=======================Agile-Mobile-Media=======================*/
