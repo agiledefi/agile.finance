@@ -113,6 +113,165 @@ h5 {
 }
 /*===========Agile-Banner===========*/
 
+/*===========Agile-Countdown===========*/
+#headline {
+    color: #FF9800;
+    font-family: 'GemunuLibreBold';
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.countdown {
+    margin-bottom: 25px;
+}
+.money-progress {
+    width: 100%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.money-progress span {
+    font-family: 'GemunuLibreBold';
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.progress {
+    height: 10px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+.progress-bar {
+    background-color: #00AEEF;
+    border-radius: 100px;
+}
+.count-btm-area h3 {
+    color: #FF9800;
+    font-size: 36px;
+    font-family: 'GemunuLibreBold';
+    line-height: 39px;
+    margin-bottom: 10px;
+}
+.count-btm-area p {
+    font-size: 14px;
+    line-height: 15px;
+    color: #ffffff;
+    font-family: 'GemunuLibreBold';
+}
+#countdown {
+    width: 100%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.timer-col {
+    max-width: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.hexagon {
+  width: 25%;
+  height: auto;
+  background: red;
+  position: relative;
+}
+.hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid red;
+}
+.hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid red;
+}
+.timer-inner-col {
+    width: 81px;
+    height: 96px;
+    background-image: url(../images/hexagon1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.timer-inner-col {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    vertical-align: middle;
+    -ms-flex-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.timer-inner-col span {
+    color: #ffffff;
+    font-family: 'GemunuLibreBold';
+    display: block;
+    width: 100%;
+}
+.timer-inner-col span:first-of-type {
+    font-size: 48px;
+    line-height: 40px;
+}
+.timer-inner-col span:nth-of-type(2) {
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+    bottom: 17px;
+    text-transform: uppercase;
+}
+.timer-inner-col::after {
+    content: "";
+    width: 71px;
+    height: 8px;
+    background-image: url(../images/timer-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.count-btm-area button.btn {
+    background: linear-gradient(18.21deg, rgba(42, 182, 64, 0.58) 6.14%, rgba(18, 87, 21, 0.99) 80.26%);
+    color: #ffffff;
+    font-size: 28px;
+    border: none;
+    height: auto;
+    line-height: normal;
+    padding: 14px 38px;
+}
+/*===========Agile-Countdown===========*/
+
 /*===========Agile-Try===========*/
 .timeline-try-section {
     padding: 121px 0 107px;
