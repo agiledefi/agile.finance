@@ -113,6 +113,165 @@ h5 {
 }
 /*===========Agile-Banner===========*/
 
+/*===========Agile-Countdown===========*/
+#headline {
+    color: #FF9800;
+    font-family: 'GemunuLibreBold';
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.countdown {
+    margin-bottom: 25px;
+}
+.money-progress {
+    width: 100%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.money-progress span {
+    font-family: 'GemunuLibreBold';
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.progress {
+    height: 10px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+.progress-bar {
+    background-color: #00AEEF;
+    border-radius: 100px;
+}
+.count-btm-area h3 {
+    color: #FF9800;
+    font-size: 36px;
+    font-family: 'GemunuLibreBold';
+    line-height: 39px;
+    margin-bottom: 10px;
+}
+.count-btm-area p {
+    font-size: 14px;
+    line-height: 15px;
+    color: #ffffff;
+    font-family: 'GemunuLibreBold';
+}
+#countdown {
+    width: 100%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.timer-col {
+    max-width: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.hexagon {
+  width: 25%;
+  height: auto;
+  background: red;
+  position: relative;
+}
+.hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid red;
+}
+.hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid red;
+}
+.timer-inner-col {
+    width: 81px;
+    height: 96px;
+    background-image: url(../images/hexagon1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.timer-inner-col {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    vertical-align: middle;
+    -ms-flex-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.timer-inner-col span {
+    color: #ffffff;
+    font-family: 'GemunuLibreBold';
+    display: block;
+    width: 100%;
+}
+.timer-inner-col span:first-of-type {
+    font-size: 48px;
+    line-height: 40px;
+}
+.timer-inner-col span:nth-of-type(2) {
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+    bottom: 17px;
+    text-transform: uppercase;
+}
+.timer-inner-col::after {
+    content: "";
+    width: 71px;
+    height: 8px;
+    background-image: url(../images/timer-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.count-btm-area button.btn {
+    background: linear-gradient(18.21deg, rgba(42, 182, 64, 0.58) 6.14%, rgba(18, 87, 21, 0.99) 80.26%);
+    color: #ffffff;
+    font-size: 28px;
+    border: none;
+    height: auto;
+    line-height: normal;
+    padding: 14px 38px;
+}
+/*===========Agile-Countdown===========*/
+
 /*===========Agile-Try===========*/
 .timeline-try-section {
     padding: 121px 0 107px;
@@ -288,6 +447,9 @@ h2.brdr-top::before {
 .contract-sec .secure-img {
     bottom: -41px;
 }
+.contract-row1 .col-md-4:not(:last-of-type) {
+    margin-bottom: 75px;
+}
 /*===========Agile-Contract===========*/
 
 /*===========Agile-Roadmap===========*/
@@ -395,7 +557,8 @@ h2.brdr-top::before {
     top: -68px;
     right: 109px;
 }
-.roadmap-3 .roadmap-5::before {
+.roadmap-3 .roadmap-5::before,
+.roadmap-4 .roadmap-5::before {
     content: "5";
     top: -63px;
     left: 112px;
@@ -441,6 +604,9 @@ h2.brdr-top::before {
     position: absolute;
     bottom: 202px;
     left: -68px;
+}
+.roadmap-dese-left .roadmap-5 {
+    display: none;
 }
 /*===========Agile-Roadmap===========*/
 
@@ -499,3 +665,135 @@ h2.brdr-top::before {
     margin-top: 0;
 }
 /*=======================Agile-Footer=======================*/
+
+
+
+
+
+
+
+
+/*=======================Agile-Mobile-Media=======================*/
+@media (min-width: 0px) and (max-width: 849px) {
+.roadmap-top-dots {
+    right: 0;
+}
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+.contract-row1 .col-md-4:not(:last-of-type) {
+    margin-bottom: 75px;
+}
+.roadmap-tree::before {
+    display: none;
+}
+.roadmap-dese-left, .roadmap-dese-right {
+    padding: 80px 0 0;
+}
+.roadmap-column .roadmap-2,
+.roadmap-column .roadmap-4,
+.roadmap-column .roadmap-7 {
+    order: 2;
+}
+.roadmap-column .doc-wraper::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.doc-wraper h1 {
+    font-size: 23px;
+    line-height: 28px;
+}
+.roadmap-dese-right .roadmap-5 {
+    display: none;
+}
+.roadmap-dese-left .roadmap-5 {
+    display: block;
+}
+}
+
+
+
+@media (min-width: 320px) and (max-width: 549px) {
+
+}
+
+
+
+@media (min-width: 550px) and (max-width: 767px) {
+
+}
+
+
+
+
+@media (min-width: 550px) and (max-width: 849px) {
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 849px) {
+.doc-wraper h1 {
+    font-size: 18px;
+    line-height: 27px;
+}
+.roadmap-7 {
+    padding-top: 249px;
+}
+.roadmap-6 {
+    padding-top: 37px;
+}
+.contract-row1 .col-md-4 {
+    width: 50%;
+}
+.contract-row1 .col-md-4:nth-of-type(3n) {
+    margin-bottom: 0;
+}
+.gradient-txt h2 {
+    font-size: 42px;
+}
+}
+
+
+
+
+@media (min-width: 850px) and (max-width: 1024px) {
+.timeline-banner .col-lg-8 {
+    width: 60%;
+}
+.timeline-banner .col-lg-4 {
+    width: 40%;
+}
+.doc-wraper h1 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.roadmap-3 {
+    margin-top: 6px;
+}
+.roadmap-4 {
+    padding-top: 126px;
+}
+.roadmap-5 {
+    margin-top: 86px;
+}
+.roadmap-6 {
+    margin-top: 57px;
+}
+.roadmap-7 {
+    padding-top: 274px;
+}
+.gradient-txt h2 {
+    font-size: 38px;
+}
+}
+/*=======================Agile-Mobile-Media=======================*/
