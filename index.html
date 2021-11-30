@@ -95,7 +95,7 @@
             <div class="row ">
                 <div class="col-md-12 col-lg-8 d-flex flex-column justify-content-center align-items-end">
                     <div class="timeline-heading">
-                        <h1>THE Agile Finance PROTOCOL CURRENTLY HAS <span class="title text-red">$992,630,743</span> OF ASSETS EARNING INTEREST ACROSS <span class="title text-red">16 MARKETS</span></h1>
+                        <h1>THE Agile Finance PROTOCOL CURRENTLY HAS <span id="tvl" class="title text-red">$992,630,743</span> OF ASSETS EARNING INTEREST ACROSS <span id="markets" class="title text-red"></span></h1>
                     </div>
                     <div class="timeline-data">
                         <h3 class="text-uppercase">AgL is an algorithmic, autonomous interest rate protocol built for developers, to unlock a universe of open financial applications.</h3>
@@ -376,8 +376,8 @@
                                 <img src="images/supply-icon.png" id="image4" class="img-fluid" alt="">
                             </div>
                             <div class="gradient-txt">
-                                <h5 class="text-center text-uppercase">TOAL SUPPLY</h5>
-                                <h2 class="text-center">1,000,000,000</h2>
+                                <h5 class="text-center text-uppercase">TOTAL SUPPLY</h5>
+                                <h2 class="text-center" id="total-supply"></h2>
                             </div>
                         </div>
                     </div>
@@ -608,41 +608,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJBQW1NTJS"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    //   window.dataLayer = window.dataLayer || [];
+    //   function gtag(){dataLayer.push(arguments);}
+    //   gtag('js', new Date());
 
-      gtag('config', 'G-YJBQW1NTJS');
-    </script>
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date(1638316800000).getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-          // Get today's date and time
-          var now = new Date().getTime();
-            
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-            
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-          // Output the result in an element with id="demo"
-          document.getElementById("countdown").innerHTML = "<div class='days timer-col'><div class='timer-inner-col'><span>" + days + "</span><span>days</span></div></div> " +"<div class='hours timer-col'><div class='timer-inner-col'><span>" + hours + "</span><span>Hours</span></div></div> "
-          + "<div class='Minutes timer-col'><div class='timer-inner-col'><span>" + minutes + "</span><span>Minutes</span></div></div>  " + "<div class='Seconds timer-col'><div class='timer-inner-col'><span>" + seconds + "</span><span>Seconds</span></div></div>  ";
-            
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-          }
-        }, 1000);
+    //   gtag('config', 'G-YJBQW1NTJS');
     </script>
 </body>
 
