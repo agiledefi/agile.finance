@@ -71,56 +71,5 @@ $(document).ready(function () {
             style: "currency",
             currency: "USD",
         }).format(totalSupply)}`);
-
-        const currencyFormatter = (labelValue) => {
-            let suffix = '';
-            let unit = 1;
-            const abs = Math.abs(Number(labelValue));
-            if (abs >= 1.0e9) {
-                // Nine Zeroes for Billions
-                suffix = 'B';
-                unit = 1.0e9;
-            } else if (abs >= 1.0e6) {
-                // Six Zeroes for Millions
-                suffix = 'M';
-                unit = 1.0e6;
-            } else if (abs >= 1.0e3) {
-                // Three Zeroes for Thousands
-                suffix = 'K';
-                unit = 1.0e3;
-            }
-
-            return `$${Math.round(((abs / unit) + Number.EPSILON) * 100) / 100}${suffix}`
-        }
-
-        let marketsHtml = markets.map((row, index) => {
-            return (
-                `<tr class="tr-element d-flex justify-content-between align-items-center">
-                <td class="td-element-1 d-flex justify-content-start">
-                    <a href="detail.html" class="d-flex align-items-center">
-                        <div class="icon-market">
-                            <img src="images/wbtc-colour.png" class="img-fluid" alt="">
-                        </div>
-                        <p>${row.underlyingSymbol}</p>
-                    </a>
-                </td>
-                <td class="td-element-1">
-                    <h2>${currencyFormatter(row.totalSupplyUsd)}</h2>
-                </td>
-                <td class="td-element-1">
-                    <h2>${Math.round((parseFloat(row.supplyApy) + Number.EPSILON) * 100) / 100}% + ${Math.round((parseFloat(row.supplyAgileApy) + Number.EPSILON) * 100) / 100}%</h2>
-                    <h3>Max reward ${Math.round((parseFloat(row.supplyApy) + parseFloat(row.supplyAgileApy) + Number.EPSILON) * 100) / 100}%</h3>
-                </td>
-                <td class="td-element-1">
-                <h2>${currencyFormatter(row.totalBorrowsUsd)}</h2>
-                </td>
-                <td class="td-element-1">
-                <h2>-${Math.round((parseFloat(row.borrowApy) + Number.EPSILON) * 100) / 100}% + ${Math.round((parseFloat(row.borrowAgileApy) + Number.EPSILON) * 100) / 100}%</h2>
-                <h3>Max reward ${Math.round((parseFloat(row.borrowApy) + parseFloat(row.borrowAgileApy) + Number.EPSILON) * 100) / 100}%</h3>
-                </td>
-            </tr>`
-            )
-        })
-        $('#table-body').html(marketsHtml)
     });
 });
