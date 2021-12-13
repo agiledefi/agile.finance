@@ -74,20 +74,21 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://public.agilefi.org/">Public Sale</a>
-                        </li>
-<!--                         <li class="nav-item">
-                            <a class="nav-link" href="#">Governance</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Treasury</a>
-                        </li> -->
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="https://docs.agile.fi">Docs</a>
-                        </li> -->
+                        </li>                        
                         <li class="nav-item">
                             <a class="nav-link" href="/Whitepaper.pdf">WhitePaper</a>
                         </li>
                     </ul>
+                    <div class="header__menu-icons"> 
+                        <ul>
+                            <li> 
+                                <a class="header__menu-icons-pdf" href="https://github.com/solidproof/smart-contract-audits/blob/main/SmartContract_Audit_Solidproof_AgileFinance.pdf" target="_blank">
+                                    <div class="header__menu-icons-pdf-1"> <img src="images/solidproof_white-1.png" alt="Swipe"></div>
+                                    <div class="header__menu-icons-pdf-2"><img src="images/certik.png" alt="Swipe"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="nav-button">
                         <button class="btn btn-primary"><a href="https://app.agilefi.org" target="_blank">App</a></button>
                     </div>
@@ -101,7 +102,7 @@
             <div class="row ">
                 <div class="col-md-12 col-lg-8 d-flex flex-column justify-content-center align-items-end">
                     <div class="timeline-heading">
-                        <h1>THE Agile Finance PROTOCOL CURRENTLY HAS <span id="tvl" class="title text-red">$992,630,743</span> OF ASSETS EARNING INTEREST ACROSS <span id="markets" class="title text-red"></span></h1>
+                        <h1>THE Agile Finance PROTOCOL CURRENTLY HAS <span  id="tvl" class="title text-red">$992,630,743</span> OF ASSETS EARNING INTEREST ACROSS <span id="markets" class="title text-red">16 MARKETS</span></h1>
                     </div>
                     <div class="timeline-data">
                         <h3 class="text-uppercase">AgL is an algorithmic, autonomous interest rate protocol built for developers, to unlock a universe of open financial applications.</h3>
@@ -118,11 +119,11 @@
                     <div class="progress-bars">
                         <div class="money-progress">
                             <span>0K</span>
-                            <span>25K USD</span>
+                            <span>19.4K USD</span>
                             <span>500k</span>
                         </div>
                         <div class="progress">                            
-                            <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="2.5" aria-valuemin="0" aria-valuemax="50"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 3.89%;" aria-valuenow="1.94" aria-valuemin="0" aria-valuemax="50"></div>
                         </div>
                         <div class="count-btm-area">
                             <h3 class="funds">Collecting Funds From <br>The Public Sale: $500,000</h3>
@@ -377,7 +378,7 @@
                             </div>
                             <div class="gradient-txt">
                                 <h5 class="text-center text-uppercase">TOTAL SUPPLY</h5>
-                                <h2 class="text-center" id="total-supply"></h2>
+                                <h2 class="text-center" id="total-supply">1,000,000,000</h2>
                             </div>
                         </div>
                     </div>
@@ -608,11 +609,41 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJBQW1NTJS"></script>
     <script>
-    //   window.dataLayer = window.dataLayer || [];
-    //   function gtag(){dataLayer.push(arguments);}
-    //   gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    //   gtag('config', 'G-YJBQW1NTJS');
+      gtag('config', 'G-YJBQW1NTJS');
+    </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 25, 2021 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("countdown").innerHTML = "<div class='days timer-col'><div class='timer-inner-col'><span>" + days + "</span><span>days</span></div></div> " +"<div class='hours timer-col'><div class='timer-inner-col'><span>" + hours + "</span><span>Hours</span></div></div> "
+          + "<div class='Minutes timer-col'><div class='timer-inner-col'><span>" + minutes + "</span><span>Minutes</span></div></div>  " + "<div class='Seconds timer-col'><div class='timer-inner-col'><span>" + seconds + "</span><span>Seconds</span></div></div>  ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+          }
+        }, 1000);
     </script>
 </body>
 

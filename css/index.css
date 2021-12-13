@@ -527,6 +527,7 @@ section.secure-section:before {
     padding-bottom: 150px;
     padding-top: 50px;
     color: #fff;
+    z-index: 9;
 }
 .market .social-banner .container-width::before {
     content: '';
@@ -538,6 +539,7 @@ section.secure-section:before {
     right: 0;
     top: -40px;
     position: absolute;
+    z-index: -1;
 }
 /*marketing overview section*/
 .breadcrumb-item.active {
