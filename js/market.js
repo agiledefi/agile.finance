@@ -1,4 +1,4 @@
-const apiBaseURL = "https://testapi.agilefi.org/api";
+const apiBaseURL = "https://api.agilefi.org/api";
 
 $(document).ready(function () {
     let markets = null;
