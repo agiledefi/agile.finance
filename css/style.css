@@ -116,8 +116,7 @@ h5 {
     margin-right: 7px;
     padding-right: 7px;
 }
-.header__menu-icons ul,
-.header__menu-icons ul li {
+.header__menu-icons ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
