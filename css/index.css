@@ -325,7 +325,7 @@ section.secure-section:before {
     right: 0;
     top: 0;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
 }
 /* section.secure-section:after {
     content: '';
@@ -349,7 +349,7 @@ section.secure-section:before {
     padding: 0 0px;
     color: #ffffff;
     margin-bottom: 60px;
-    z-index: 9;
+    z-index: 1;
     position: relative;
 }
 .secure-heading h3{
@@ -362,7 +362,7 @@ section.secure-section:before {
 }
 .secure-data{
     position: relative;
-    z-index: 9;
+    z-index: 1;
 }
 .secure-protocol { 
     padding-top: 20px;
@@ -430,6 +430,7 @@ section.secure-section:before {
     background-color: #000220;
     padding-top: 80px;
     padding-bottom: 40px;
+    z-index: 99;
 }
 
 .footer-data {
@@ -952,6 +953,75 @@ tr{
     margin: 0;
     list-style-type: none;
 }
+
+
+
+
+.footer-icons.row {
+    position: fixed;
+    z-index: 9;
+    bottom: 40px;
+    right: 30px;
+    max-width: 300px;
+    width: 300px;
+    justify-content: flex-end;
+}
+.footer-icons .col-md-6 {
+    width: auto;
+    padding: 0;
+}
+.footer-icons .hide-txt {
+    display: none;
+    margin-left: 10px;
+}
+.fixed-icons:hover .hide-txt {
+    display: inline-block;
+}
+.fixed-icons {
+    width: 100px;
+    height: 100px;
+    background-color: #2b2044;
+    position: relative;
+    z-index: 9;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+.fixed-icons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 3px solid transparent;
+    background: radial-gradient(100.88% 2097.6% at -8.11% 85%,rgba(255,255,255,.13) 0,rgba(0,45,116,.13) 32.81%,rgba(0,45,116,.13) 55.21%,rgba(0,45,116,.13) 78.65%,rgba(255,255,255,.13) 100%);
+    border-radius: 100px;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    z-index: -1;
+}
+.fixed-icons a {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fixed-icons:hover {
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* responsive media queries */
