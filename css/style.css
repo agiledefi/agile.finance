@@ -541,22 +541,22 @@ h2.brdr-top::before {
     padding-top: 46px;
 }
 .roadmap-2 {
-    padding-top: 150px;
+    padding-top: 152px;
 }
 .roadmap-3 {
     margin-top: -12px;
 }
 .roadmap-4 {
-    padding-top: 108px;
+    padding-top: 107px;
 }
 .roadmap-5 {
     margin-top: 98px;
 }
 .roadmap-6 {
-    margin-top: -5px;
+    margin-top: -76px;
 }
 .roadmap-7 {
-    padding-top: 214px;
+    padding-top: 142px;
 }
 .doc-wraper {
     padding: 15px 18px;
@@ -734,6 +734,9 @@ h2.brdr-top::before {
 .roadmap-dese-left, .roadmap-dese-right {
     padding: 80px 0 0;
 }
+.roadmap-6 {
+    margin-top: 0;
+}
 .roadmap-column .roadmap-2,
 .roadmap-column .roadmap-4,
 .roadmap-column .roadmap-7 {
@@ -789,10 +792,10 @@ h2.brdr-top::before {
     line-height: 27px;
 }
 .roadmap-7 {
-    padding-top: 249px;
+    padding-top: 195px;
 }
 .roadmap-6 {
-    padding-top: 37px;
+    padding-top: 55px;
 }
 .contract-row1 .col-md-4 {
     width: 50%;
@@ -802,6 +805,9 @@ h2.brdr-top::before {
 }
 .gradient-txt h2 {
     font-size: 42px;
+}
+.footer-section .col-md-8 .col-md-2 {
+    width: 25%;
 }
 }
 
@@ -829,10 +835,10 @@ h2.brdr-top::before {
     margin-top: 86px;
 }
 .roadmap-6 {
-    margin-top: 57px;
+    margin-top: -5px;
 }
 .roadmap-7 {
-    padding-top: 274px;
+    padding-top: 213px;
 }
 .gradient-txt h2 {
     font-size: 38px;
