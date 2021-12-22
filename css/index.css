@@ -960,7 +960,7 @@ tr{
 .footer-icons.row {
     position: fixed;
     z-index: 9;
-    bottom: 40px;
+    bottom: 96px;
     right: 30px;
     max-width: 300px;
     justify-content: flex-end;
