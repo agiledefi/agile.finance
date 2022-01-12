@@ -134,15 +134,15 @@ $(document).ready(function () {
                         <td class="td-element-1">
                             <h2>${currencyFormatter(row.totalSupplyUsd)}</h2>
                         </td>
-                        <td class="td-element-1 positive-values">
-                            <h2>${Math.round((parseFloat(row.supplyApy) + Number.EPSILON) * 100) / 100}% + ${Math.round((parseFloat(row.supplyAgileApy) + Number.EPSILON) * 100) / 100}%</h2>
+                        <td class="td-element-1">
+                            <h2><span>${Math.round((parseFloat(row.supplyApy) + Number.EPSILON) * 100) / 100}%</span><span class="positive-values"> + ${Math.round((parseFloat(row.supplyAgileApy) + Number.EPSILON) * 100) / 100}%</span></h2>
                             <h3>Max reward ${Math.round((parseFloat(row.supplyApy) + parseFloat(row.supplyAgileApy) + Number.EPSILON) * 100) / 100}%</h3>
                         </td>
                         <td class="td-element-1">
                             <h2>${currencyFormatter(row.totalBorrowsUsd)}</h2>
                         </td>
-                        <td class="td-element-1 negative-values">
-                            <h2>${Math.round((parseFloat(row.borrowAgileApy) + Number.EPSILON) * 100) / 100}% - ${Math.round((parseFloat(row.borrowApy) + Number.EPSILON) * 100) / 100}%</h2>
+                        <td class="td-element-1">
+                            <h2><span>${Math.round((parseFloat(row.borrowAgileApy) + Number.EPSILON) * 100) / 100}%</span><span class="negative-values"> - ${Math.round((parseFloat(row.borrowApy) + Number.EPSILON) * 100) / 100}%</span></h2>
                             <h3>Max reward ${Math.round((parseFloat(row.borrowAgileApy) - parseFloat(row.borrowApy) + Number.EPSILON) * 100) / 100}%</h3>
                         </td>
                     </tr>`

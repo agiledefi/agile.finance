@@ -783,10 +783,7 @@ tr{
 .market-table #table-body a.table-click .icon-market {
     display: inline-block;
 }
-.negative-values h2, 
-.negative-values h3 {
-    color: red;
-}
+
 .market-table #table-body .icon-market img {
     max-width: 40px;
 }
@@ -794,9 +791,11 @@ tr{
     display: flex;
     align-items: center;
 }
-.positive-values h2, 
-.positive-values h3 {
+.positive-values {
     color: rgba(58,182,122,1);
+}
+.negative-values {
+    color: red;
 }
 /******** BTC page starts********/
 .breadcrumb-item a {
