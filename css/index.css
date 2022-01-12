@@ -687,6 +687,7 @@ section.secure-section:before {
     right: 0;
     top: -130px;
     position: absolute;
+    z-index: -1;
 }
 
 .all-markets-head {
@@ -769,8 +770,34 @@ tbody tr{
 tr{
     border-bottom: 1px solid #000;
 }
-
-
+.market-table thead td.td-element,
+.market-table #table-body td.td-element-1 {
+    vertical-align: middle;
+    text-align: center;
+}
+.market-table thead td.td-element p,
+.market-table #table-body a.table-click p {
+    display: inline-block;
+}
+.market-table thead td.td-element .icon-silver,
+.market-table #table-body a.table-click .icon-market {
+    display: inline-block;
+}
+.negative-values h2, 
+.negative-values h3 {
+    color: red;
+}
+.market-table #table-body .icon-market img {
+    max-width: 40px;
+}
+.market-table #table-body a.table-click {
+    display: flex;
+    align-items: center;
+}
+.positive-values h2, 
+.positive-values h3 {
+    color: rgba(58,182,122,1);
+}
 /******** BTC page starts********/
 .breadcrumb-item a {
     color: #000000 !important;

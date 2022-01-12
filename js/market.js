@@ -36,9 +36,9 @@ $(document).ready(function () {
             totalSupply = markets.reduce((prev, current) => {
                 return prev + Number(current.totalSupplyUsd)
             }, 0);
-            totalSupplyApy = markets.reduce((prev, current) => {
-                return prev + Number(current.supplyApy) + Number(current.supplyAgileApy)
-            }, 0);
+            totalSupplyApy = (markets.reduce((prev, current) => {
+                            return prev + Number(current.supplyApy) + Number(current.supplyAgileApy)
+                        }, 0)).toFixed(2);
         }
         $('#total-supply').text(`${new Intl.NumberFormat("en-US", {
             style: "currency",
@@ -122,11 +122,11 @@ $(document).ready(function () {
 
             let marketsHtml = markets.map((row, index) => {
                 return (
-                    `<tr class="tr-element d-flex justify-content-between align-items-center">
-                        <td class="td-element-1 d-flex justify-content-start">
-                            <a href="detail.html" class="d-flex align-items-center">
+                    `<tr class="tr-element">
+                        <td class="td-element-1" style="text-align:left;padding-left:35px;">
+                            <a href="detail.html" class="table-click">
                                 <div class="icon-market">
-                                    <img src="images/wbtc-colour.png" class="img-fluid" alt="">
+                                    <img src="images/${row.underlyingSymbol}.png" class="img-fluid" alt="">
                                 </div>
                                 <p>${row.underlyingSymbol}</p>
                             </a>
@@ -134,14 +134,14 @@ $(document).ready(function () {
                         <td class="td-element-1">
                             <h2>${currencyFormatter(row.totalSupplyUsd)}</h2>
                         </td>
-                        <td class="td-element-1">
+                        <td class="td-element-1 positive-values">
                             <h2>${Math.round((parseFloat(row.supplyApy) + Number.EPSILON) * 100) / 100}% + ${Math.round((parseFloat(row.supplyAgileApy) + Number.EPSILON) * 100) / 100}%</h2>
                             <h3>Max reward ${Math.round((parseFloat(row.supplyApy) + parseFloat(row.supplyAgileApy) + Number.EPSILON) * 100) / 100}%</h3>
                         </td>
                         <td class="td-element-1">
                             <h2>${currencyFormatter(row.totalBorrowsUsd)}</h2>
                         </td>
-                        <td class="td-element-1">
+                        <td class="td-element-1 negative-values">
                             <h2>${Math.round((parseFloat(row.borrowAgileApy) + Number.EPSILON) * 100) / 100}% - ${Math.round((parseFloat(row.borrowApy) + Number.EPSILON) * 100) / 100}%</h2>
                             <h3>Max reward ${Math.round((parseFloat(row.borrowAgileApy) - parseFloat(row.borrowApy) + Number.EPSILON) * 100) / 100}%</h3>
                         </td>
