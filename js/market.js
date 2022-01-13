@@ -124,7 +124,7 @@ $(document).ready(function () {
                 return (
                     `<tr class="tr-element">
                         <td class="td-element-1" style="text-align:left;padding-left:35px;">
-                            <a href="detail.html" class="table-click">
+                            <a href="#" class="table-click">
                                 <div class="icon-market">
                                     <img src="images/${row.underlyingSymbol}.png" class="img-fluid" alt="">
                                 </div>
